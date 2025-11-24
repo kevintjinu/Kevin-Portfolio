@@ -1,13 +1,18 @@
-import type { ReactNode } from "react";
+import React from 'react'
 
-type LayoutProps = {
-  children: ReactNode;
-};
-
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({
+  title,
+  children,
+}: {
+  title: string
+  children: React.ReactNode
+}) {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <div className="mx-auto max-w-5xl px-6 py-12">{children}</div>
+    <div className="min-h-screen px-6 py-10 bg-gradient-to-b from-black via-gray-950 to-purple-950">
+      <h1 className="text-center text-4xl md:text-6xl font-bold text-purple-300 drop-shadow mb-10">
+        {title}
+      </h1>
+      <div className="max-w-5xl mx-auto">{children}</div>
     </div>
-  );
+  )
 }

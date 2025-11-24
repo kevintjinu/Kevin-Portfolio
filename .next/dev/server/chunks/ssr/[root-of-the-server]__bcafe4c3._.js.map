@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/kevinjinu/Documents/Kevin%20/Portfolio/kevin-rpg-portfolio/src/app/resume/page.tsx"],"sourcesContent":["export default function ResumePage() {\n  return (\n    <main className=\"p-10 space-y-4\">\n      <h1 className=\"text-3xl font-bold\">Resume</h1>\n      <p className=\"text-zinc-200/80\">\n        Link or embed your resume here. You can also highlight key experience\n        and skills.\n      </p>\n    </main>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAK,WAAU;;0BACd,8OAAC;gBAAG,WAAU;0BAAqB;;;;;;0BACnC,8OAAC;gBAAE,WAAU;0BAAmB;;;;;;;;;;;;AAMtC"}}]
+}

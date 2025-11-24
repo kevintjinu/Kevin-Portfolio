@@ -1,11 +1,17 @@
+'use client'
+
+import Layout from '@/components/Layout'
+import QuestCard from '@/components/QuestCard'
+import projects from '@/data/projects'
+
 export default function ProjectsPage() {
   return (
-    <main className="p-10 space-y-4">
-      <h1 className="text-3xl font-bold">Projects</h1>
-      <p className="text-zinc-200/80">
-        Showcase your projects here. Pull data from `src/data/projects.ts` and
-        render cards or a list.
-      </p>
-    </main>
-  );
+    <Layout title="Quest Board – Projects">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((p) => (
+          <QuestCard key={p.slug} project={p} />
+        ))}
+      </div>
+    </Layout>
+  )
 }
